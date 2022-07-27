@@ -15,7 +15,7 @@ addBtn.addEventListener("click", function (e) {
     }
     //added value of text area.
     //console.log(addTxt.value);
-    //agar ye if na lagai ye arror aa rha h ki null me puch kaise kr rhe ho.
+    
     
     notesObj.push(addTxt.value);
 
@@ -50,7 +50,7 @@ function showNotes()
         </div>
         `;
     });
-    // <div id="notes" class="row container-fluid"></div>=iski baat ho rhi h.
+    // <div id="notes" class="row container-fluid"></div> is reached.
     let notesElm = document.getElementById('notes');
     if (notesObj.length != 0)
         notesElm.innerHTML = html;
@@ -74,6 +74,7 @@ function deleteNote(index)
     showNotes();
 }
 
+//function for the search bar
 let search = document.getElementById("searchTxt");
 search.addEventListener("input",function()
 {
