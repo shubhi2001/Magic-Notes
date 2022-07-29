@@ -9,14 +9,8 @@ addBtn.addEventListener("click", function (e) {
         notesObj = [];//blank array
     }
     else {
-        //this statement gives an array of strings after parsing.
-        //previously it was stored as  strings in local storage with key="notes".
         notesObj = JSON.parse(notes);
     }
-    //added value of text area.
-    //console.log(addTxt.value);
-    
-    
     notesObj.push(addTxt.value);
 
     //updating local storage.
@@ -24,7 +18,7 @@ addBtn.addEventListener("click", function (e) {
 
     //so that after clicking add node the text area gets empty.
     addTxt.value = "";
-    console.log(notesObj);
+    //console.log(notesObj);
 
     showNotes();
 });
